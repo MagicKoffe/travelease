@@ -23,38 +23,26 @@
         <p>Browse our latest flight deals — handpicked for your next adventure!</p>
     </section>
 
-    <section class="offers-grid">
-        <div class="offer-card">
-            <img src="images/paris.jpg" alt="Flight to Paris">
-            <h3>Paris</h3>
-            <p>From £199</p>
-        </div>
-        <div class="offer-card">
-            <img src="images/newyork.jpg" alt="Flight to New York">
-            <h3>New York</h3>
-            <p>From £299</p>
-        </div>
-        <div class="offer-card">
-            <img src="images/tokyo.jpg" alt="Flight to Tokyo">
-            <h3>Tokyo</h3>
-            <p>From £399</p>
-        </div>
-        <div class="offer-card">
-            <img src="images/rome.jpg" alt="Flight to Rome">
-            <h3>Rome</h3>
-            <p>From £149</p>
-        </div>
-        <div class="offer-card">
-            <img src="images/dubai.jpg" alt="Flight to Dubai">
-            <h3>Dubai</h3>
-            <p>From £349</p>
-        </div>
+    <section id="originSelector" class="origin-selector">
+        <p>Showing flights from: <select id="originSelect">
+            <option value="MAD">Madrid (MAD)</option>
+            <option value="LHR">London (LHR)</option>
+            <option value="CDG">Paris (CDG)</option>
+            <option value="FCO">Rome (FCO)</option>
+            <option value="JFK">New York (JFK)</option>
+        </select></p>
+    </section>
+
+    <section id="offersGrid" class="offers-grid">
+        <!-- Flight deals will be dynamically loaded here -->
+        <div class="loading-spinner">Loading deals...</div>
     </section>
 
     <footer>
         <p>&copy; 2025 TravelEase. All rights reserved.</p>
     </footer>
 
+    <script src="js/offers.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
