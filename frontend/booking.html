@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking - TravelEase</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1><a href="index.html" class="header-logo">TravelEase</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Destinations</a>
+      <a href="offers.html">Offers</a>
+      <a href="faq.html">FAQ</a>
+      <a href="logoutconfirmation.html">Logout</a>
+    </nav>
+  </header>
+
+  <section class="selected-offer">
+    <h2>Selected Offer</h2>
+    <div class="card">
+      <img src="assets/flight-placeholder.jpg" alt="Selected Offer Image" class="offer-image">
+      <div class="card-content">
+        <p><strong>Flight/Hotel Details:</strong> (Offer details will be dynamically inserted here)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-form-section">
+    <h2>Enter Your Details</h2>
+    <form id="bookingForm">
+      <input type="text" id="firstName" placeholder="First Name" required><br>
+      <input type="text" id="lastName" placeholder="Last Name" required><br>
+      <input type="email" id="emailBooking" placeholder="Email" required><br>
+      <input type="text" id="phone" placeholder="Phone Number" required><br>
+      <button type="submit" class="btn-primary">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TravelEase. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

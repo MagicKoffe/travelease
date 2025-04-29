@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ - TravelEase</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="index.html" class="header-logo">TravelEase</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Destinations</a>
+      <a href="offers.html">Offers</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>How do I create an account?</h3>
+      <p>Click on the "Sign Up" button in the header or visit the Sign Up page, fill out the required fields, and submit. You'll receive a confirmation email shortly after.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What payment methods do you accept?</h3>
+      <p>We accept major credit cards (Visa, MasterCard, American Express) as well as PayPal. All transactions are secure and encrypted.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I cancel or change my booking?</h3>
+      <p>You can modify or cancel bookings up to 24 hours before your scheduled trip without penalty. Visit your profile page to manage your bookings.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do I contact customer support?</h3>
+      <p>For any questions, please email support@travelease.com or use the chat icon in the bottom-right corner of the site.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TravelEase. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-item h3').forEach(header => {
+      header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>

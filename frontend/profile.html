@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Profile – TravelEase</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html" class="header-logo">TravelEase</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Destinations</a>
+      <a href="offers.html">Offers</a>
+      <a href="faq.html">FAQ</a>
+      <a href="logoutconfirmation.html">Logout</a>
+    </nav>
+  </header>
+
+  <section class="profile-section">
+    <h2>My Profile</h2>
+    <p id="welcome-message"></p>
+    <div id="user-details"></div>
+  </section>
+
+  <section class="profile-section">
+    <h2>My Bookings</h2>
+    <div id="bookingsList" class="bookings-grid">
+      <!-- Booking cards will be dynamically inserted by your existing main.js -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TravelEase. All rights reserved.</p>
+  </footer>
+
+  <!-- Supabase client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <!-- your existing bookings logic -->
+  <script src="js/main.js" defer></script>
+  <!-- new profile‐data logic -->
+  <script src="js/profile.js" defer></script>
+</body>
+</html>

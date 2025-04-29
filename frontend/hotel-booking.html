@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Booking - TravelEase</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1><a href="index.html" class="header-logo">TravelEase</a></h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Destinations</a>
+      <a href="offers.html">Offers</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="selected-hotel-offer">
+    <h2>Selected Hotel</h2>
+    <div class="card">
+      <img src="assets/hotel-placeholder.jpg" alt="Selected Hotel Image" class="offer-image">
+      <div class="card-content">
+        <p><strong>Hotel Details:</strong> (Hotel details will be dynamically inserted here)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="booking-form-section">
+    <h2>Enter Your Details</h2>
+    <form id="hotelBookingForm">
+      <input type="text" id="firstName" placeholder="First Name" required><br>
+      <input type="text" id="lastName" placeholder="Last Name" required><br>
+      <input type="email" id="emailBooking" placeholder="Email" required><br>
+      <input type="text" id="phone" placeholder="Phone Number" required><br>
+      <button type="submit" class="btn-primary">Confirm Hotel Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Travel Ease. All rights reserved.</p>
+  </footer>
+
+  <script src="js/hotel-booking.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

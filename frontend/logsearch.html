@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search - TravelEase</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+  <header>
+    <h1><a href="index.html" class="header-logo">TravelEase</a></h1>
+    <nav>
+      <a href="logindex.html">Home</a>
+      <a href="logoffers.html">Offers</a>
+      <a href="logfaq.html">FAQ</a>
+      <a href="profile.html">Profile</a>
+      <a href="logoutconfirmation.html">Logout</a>
+    </nav>
+  </header>
+
+  <section class="search-bar">
+    <form id="flightSearchForm">
+      <input type="text" id="origin" placeholder="Departing From" required>
+      <input type="text" id="destination" placeholder="Destination" required>
+      <input type="date" id="departureDate" required>
+      <input type="number" id="adults" placeholder="Adults + Children" min="1" value="1" required>
+      <button type="submit" class="btn-primary">Search Flights</button>
+    </form>
+  </section>
+
+  <section class="search-results">
+    <h2>Available Flights</h2>
+    <div id="flightsContainer">
+      <!-- Flight cards inserted here -->
+    </div>
+
+    <h2>Available Hotels</h2>
+    <div id="hotelsContainer">
+      <!-- Hotel cards inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TravelEase. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
